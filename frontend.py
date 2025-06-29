@@ -2,7 +2,7 @@ import streamlit as st
 import boto3
 
 # Set up Comprehend client
-comprehend = boto3.client('comprehend')
+comprehend = boto3.client('comprehend', region='ap-southeast-2')
 
 st.title("🧠 Sentiment Analyzer")
 st.subheader("Type a sentence and find out how it *feels*!")
